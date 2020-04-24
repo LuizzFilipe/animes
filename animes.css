@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.carousel{
+    position: relative;
+    height: 600px;
+    margin-top: 20px;
+    perspective: 1500px;
+}
+
+.carousel .carousel-item{
+    width: 235px;
+    transform: translateX(-8px) translateY(-100px);
+
+}
+
+.carousel .carousel-item img{
+    max-width: 250px;
+}
+
+@media(max-width:720px){
+    .carousel-item img{
+        width: 200px;
+        height: 420px;
+       margin-top: -120px;
+    }
+
+}
